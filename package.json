@@ -1,0 +1,37 @@
+{
+  "name": "cypress-jest",
+  "version": "0.0.1",
+  "description": "Jest runner for Cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --env=node"
+  },
+  "keywords": [
+    "cypress",
+    "jest",
+    "jest-runner"
+  ],
+  "author": "Yousaf Nabi <yousafn@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "create-jest-runner": "^0.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/you54f/cypress-jest.git"
+  },
+  "homepage": "https://github.com/you54f/cypress-jest",
+  "peerDependencies": {
+    "cypress": ">=1.4.0",
+    "jest": ">=21.0.0"
+  },
+  "devDependencies": {
+    "cypress": "3.3.0",
+    "find-up": "2.1.0",
+    "jest": "22.4.4",
+    "jest-runner-cypress": "0.0.2",
+    "path": "0.12.7",
+    "testdouble": "3.9.1",
+    "testdouble-jest": "1.0.1"
+  }
+}
