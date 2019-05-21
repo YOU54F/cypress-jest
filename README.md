@@ -37,4 +37,4 @@ This project is inspired by the work of TheBrainFamily in various projects:
 
 * [jest-runner-cypress](https://github.com/TheBrainFamily/jest-runner-cypress)
 * [jest-runner-standard](https://github.com/TheBrainFamily/jest-runner-standard)
-* [cypress-jest](https://github.com/DanielMSchmidt/jest-runner-cypress-io)
+* [jest-runner-cypress-io](https://github.com/DanielMSchmidt/jest-runner-cypress-io)

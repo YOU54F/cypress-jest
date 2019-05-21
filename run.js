@@ -13,7 +13,8 @@ module.exports = async ({
     spec: testPath,
     verbose:false,
     rootDir: process.cwd(),
-    reporter:''
+    reporter:'',
+    record: true,
   }).then(results => {
     return results;
   })
