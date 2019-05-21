@@ -1,0 +1,11 @@
+.circleci
+cypress
+node_modules
+.gitignore
+.travis.yml
+cypress.json
+jest.config.json
+renovate.json
+*.spec.js
+*.spec.js.snap
+*.xml
