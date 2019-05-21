@@ -1,27 +1,33 @@
-const { pass, fail, skip } = require("create-jest-runner");
+const {pass, fail} = require('create-jest-runner')
 const cypressPath = require("./helpers/getLocalCypressFile")();
 const CypressController = require("./helpers/cypressController");
+const CypressNpmApi = require("cypress")
 
-module.exports = ({
+module.exports = async ({
   testPath,
   config: { rootDir = process.cwd(), ...options }
 }) => {
   const start = +new Date();
-  const cypress = new CypressController({ binaryPath: cypressPath, options });
-  const results = cypress.start(testPath);
+
+  const results = await CypressNpmApi.run({
+    spec: testPath,
+    verbose:false,
+    rootDir: process.cwd(),
+    reporter:''
+  }).then(results => {
+    return results;
+  })
   const end = +new Date();
-  const reportTest = (reporter, name, message) =>
-    reporter({
+
+  if(results.totalFailed === 0){
+    return pass({ start, end, test: { path: testPath}}); 
+  }
+  else if (results.runs[0].tests[0].error){
+    const runError = results.runs[0].tests[0].error
+    return fail({
       start,
       end,
-      test: { path: testPath, displayName: name, failureMessage: message }
+      test: { path: testPath, runError, title: 'Error occurred' },
     });
-
-  if (!Object.keys(results).length) {
-    reportTest(pass);
-  } else {
-    Object.entries(results).map(([name, errorMessage]) => {
-      reportTest(fail, name, errorMessage);
-    });
-  }
+  } 
 };

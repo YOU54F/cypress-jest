@@ -18,20 +18,20 @@ test("it can be constructed", () => {
     new CypressController({});
   }).toThrowErrorMatchingSnapshot();
 
-  const instance = new CypressController({ binaryPath: "./foo" });
-  expect(instance.cypressBinaryPath).toBe("./foo");
+  const instance = new CypressController({ binaryPath: "./foo run" });
+  expect(instance.cypressBinaryPath).toBe("./foo run");
 });
 
 test("an instance can start a cypress instance", () => {
   const { CypressController, spawn } = getContext();
 
   const instance = new CypressController({
-    binaryPath: "./node_modules/.bin/cypress"
+    binaryPath: "./node_modules/.bin/cypress run"
   });
   instance.start("./my/test/case.js");
 
   // TODO: find out what should be returned / put out
-  td.verify(spawn("./node_modules/.bin/cypress", ["-s", "./my/test/case.js"]));
+  td.verify(spawn("./node_modules/.bin/cypress run", ["-s", "./my/test/case.js"]));
 });
 // test(
 //   "an instance calling start multiple times does not result in parallel cypress runs"

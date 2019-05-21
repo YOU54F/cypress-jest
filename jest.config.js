@@ -4,7 +4,7 @@ module.exports = {
   projects: [
     {
       displayName: 'cypress',
-      runner: 'jest-runner-cypress',
+      runner: './index.js',
       testMatch: ['<rootDir>/**/cypress/integration/**/*.js'],      
     },
     {

@@ -2,7 +2,7 @@
 
 const td = require("testdouble");
 require("testdouble-jest")(td, jest);
-const validCypressPath = "./node_modules/.bin/cypress";
+const validCypressPath = "./node_modules/.bin/cypress run";
 
 const getContext = () => {
   const { pass, fail, skip } = td.replace("create-jest-runner", {
