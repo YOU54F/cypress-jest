@@ -8,15 +8,13 @@ Jest runner for cypress.io
 
 ## Usage
 
-Make sure you have standard already installed.
-
-```
+```sh
 npm install --save-dev cypress-jest
 ```
 
 Your `jest.config.js` should look like this:
 
-```javascript
+```js
 module.exports = {
   projects: [
     {
@@ -25,15 +23,19 @@ module.exports = {
       testMatch: ['<rootDir>/**/*-cy.js'],
     },
     {
-      displayName: 'test' // Unit Tests with jest
+      displayName: 'test' // Your other unit Tests with jest
     }
   ]
 }
 ```
 
-# Credits
+## TO
 
-This project is inspired by the work of TheBrainFamily in various projects:
+- [ ] Silence Cypress STDOUT, so we just see jest's console output
+
+## Credits
+
+This project is inspired by the work of TheBrainFamily & DanielMSchmidt in various projects:
 
 * [jest-runner-cypress](https://github.com/TheBrainFamily/jest-runner-cypress)
 * [jest-runner-standard](https://github.com/TheBrainFamily/jest-runner-standard)

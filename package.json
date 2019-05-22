@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/you54f/cypress-jest",
   "peerDependencies": {
-    "cypress": ">=1.4.0",
+    "cypress": ">=2.4.0",
     "jest": ">=21.0.0"
   },
   "devDependencies": {
