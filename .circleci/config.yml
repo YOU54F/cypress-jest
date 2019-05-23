@@ -34,7 +34,7 @@ jobs:
       TERM: xterm
     steps: 
     - attach_workspace:
-        at: ~/  
+        at: ~/app  
     - run:
         name: jest in band
         command: npx jest --runInBand
@@ -48,7 +48,7 @@ jobs:
       TERM: xterm
     steps: 
     - attach_workspace:
-        at: ~/  
+        at: ~/app 
     - run:
         name: jest in parallel
         command: npm test
@@ -62,7 +62,7 @@ jobs:
       TERM: xterm
     steps: 
     - attach_workspace:
-        at: ~/  
+        at: ~/app  
     - run:
         name: test-cypress-standard
         command: ./node_modules/.bin/cypress run -s cypress/integration/examples/*
