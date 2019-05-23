@@ -1,7 +1,7 @@
 version: 2.1
 
 jobs:
-  test:
+  install:
     docker:
       # the Docker image with Cypress dependencies
       - image: cypress/base:8
@@ -29,7 +29,7 @@ jobs:
 
   test-jest-runinband:
     docker:
-    - image: circleci/node:8.15
+    - image: cypress/base:8
     environment:
       TERM: xterm
     steps: 
@@ -43,7 +43,7 @@ jobs:
 
   test-jest-parallel:
     docker:
-    - image: circleci/node:8.15
+    - image: cypress/base:8
     environment:
       TERM: xterm
     steps: 
@@ -57,7 +57,7 @@ jobs:
 
   test-cypress-standard:
     docker:
-    - image: circleci/node:8.15
+    - image: cypress/base:8
     environment:
       TERM: xterm
     steps: 
