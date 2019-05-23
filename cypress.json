@@ -1,5 +1,4 @@
 {
-  "defaultCommandTimeout": 6000,
   "integrationFolder": "cypress",
   "projectId": "zdx96f"
 }
