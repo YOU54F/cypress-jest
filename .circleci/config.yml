@@ -8,7 +8,6 @@ jobs:
         environment:
           ## this enables colors in the output
           TERM: xterm
-    working_directory: ~/app
     steps:
       - checkout
       - restore_cache:
@@ -25,7 +24,7 @@ jobs:
       - persist_to_workspace:
           root: ~/
           paths:
-            - app
+            - project
 
   test-jest-runinband:
     docker:
@@ -34,7 +33,7 @@ jobs:
       TERM: xterm
     steps: 
     - attach_workspace:
-        at: ~/app  
+        at: ~/  
     - run:
         name: jest in band
         command: npx jest --runInBand
@@ -48,7 +47,7 @@ jobs:
       TERM: xterm
     steps: 
     - attach_workspace:
-        at: ~/app 
+        at: ~/ 
     - run:
         name: jest in parallel
         command: npm test
@@ -62,7 +61,7 @@ jobs:
       TERM: xterm
     steps: 
     - attach_workspace:
-        at: ~/app  
+        at: ~/  
     - run:
         name: test-cypress-standard
         command: ./node_modules/.bin/cypress run -s cypress/integration/examples/*
