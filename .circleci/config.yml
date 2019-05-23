@@ -30,7 +30,7 @@ jobs:
 
   test-jest-runinband:
     docker:
-    - image: cypress/base:8
+    - image: cypress/browsers:node11.13.0-chrome73
     environment:
       TERM: xterm
     steps: 
@@ -44,7 +44,7 @@ jobs:
 
   test-jest-parallel:
     docker:
-    - image: cypress/base:8
+    - image: cypress/browsers:node11.13.0-chrome73
     environment:
       TERM: xterm
     steps: 
@@ -58,7 +58,7 @@ jobs:
 
   test-cypress-standard:
     docker:
-    - image: cypress/base:8
+    - image: cypress/browsers:node11.13.0-chrome73
     environment:
       TERM: xterm
     steps: 
