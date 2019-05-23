@@ -25,6 +25,8 @@ jobs:
           root: ~/
           paths:
             - project
+            - .npm
+            - .cache
 
   test-jest-runinband:
     docker:
