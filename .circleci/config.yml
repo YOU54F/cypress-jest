@@ -74,6 +74,12 @@ workflows:
   build-test:
     jobs:
       - install
-      - test-jest-runinband
-      - test-jest-parallel
-      - test-cypress-standard
+      - test-jest-runinband:
+          requires:
+            - install
+      - test-jest-parallel:
+          requires:
+            - install
+      - test-cypress-standard:
+          requires:
+            - install
