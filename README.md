@@ -5,8 +5,7 @@
 [![Build Status](https://travis-ci.org/YOU54F/cypress-jest.svg?branch=master)](https://travis-ci.org/YOU54F/cypress-jest)
 [![Dependency Status](https://img.shields.io/david/you54f/cypress-jest.svg?style=flat-square)](https://david-dm.org/you54f/cypress-jest)
 [![devDependency Status](https://img.shields.io/david/dev/you54f/cypress-jest.svg?style=flat-square)](https://david-dm.org/you54f/cypress-jest#info=devDependencies)
-[![Coverage Status](https://coveralls.io/repos/github/YOU54F/cypress-jest/badge.svg?branch=master)](https://coveralls.io/github/YOU54F/cypress-jest?branch=master)
-
+[![CircleCI](https://circleci.com/gh/YOU54F/cypress-jest.svg?style=svg)](https://circleci.com/gh/YOU54F/cypress-jest)
 
 Jest runner for cypress.io
 
