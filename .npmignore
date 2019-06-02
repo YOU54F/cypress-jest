@@ -12,3 +12,4 @@ renovate.json
 commitlint.config.js
 jest.config.js
 scripts
+cypress-jest.tar.gz
