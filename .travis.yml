@@ -26,11 +26,11 @@ deploy:
     on:
       tags: true
       repo: YOU54F/cypress-jest
-      branch: comparisons
+      branch: master
   - provider: script
     skip_cleanup: true
     script: ./scripts/publish.sh
     on:
       tags: true
-      branch: comparisons
+      branch: master
       node: "8"
