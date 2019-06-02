@@ -78,9 +78,9 @@ workflows:
       - test-jest-runinband:
           requires:
             - install
-      - test-jest-parallel:
-          requires:
-            - install
+      # - test-jest-parallel:
+      #     requires:
+      #       - install
       - test-cypress-standard:
           requires:
             - install
