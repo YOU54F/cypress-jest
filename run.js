@@ -1,13 +1,13 @@
 const {pass, fail} = require('create-jest-runner')
 const CypressNpmApi = require("cypress")
 
+
 module.exports = async ({
   testPath,
   config: { rootDir = process.cwd(), ...options }
 }) => {
   const results = await CypressNpmApi.run({
     spec: testPath,
-    verbose:false,
     rootDir: process.cwd(),
     reporter:'',
     record: false,
