@@ -9,3 +9,6 @@ renovate.json
 *.spec.js
 *.spec.js.snap
 *.xml
+commitlint.config.js
+jest.config.js
+scripts
