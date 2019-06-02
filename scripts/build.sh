@@ -1,4 +1,4 @@
 #!/bin/bash 
 set -euo pipefail
 
-yarn run test
+yarn run test-travis

@@ -5,7 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --env=node",
-    "release": "standard-version"
+    "test-standard": "./node_modules/.bin/cypress run -s cypress/integration/examples/*",
+    "test-jest-inband": "jest --env=node --runInBand",
+    "test-jest-parallel": "jest --env=node",
+    "test-travis": "jest --env=node --config jest.travis.js",
+    "release": "standard-version",
+    "deploy:prepare": "./scripts/create_npmrc_file.sh"
   },
   "keywords": [
     "cypress",
