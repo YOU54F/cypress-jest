@@ -27,6 +27,7 @@ deploy:
       tags: true
       repo: YOU54F/cypress-jest
       branch: master
+      node: "8"
   - provider: script
     skip_cleanup: true
     script: ./scripts/publish.sh
