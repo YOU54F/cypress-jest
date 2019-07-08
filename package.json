@@ -1,6 +1,6 @@
 {
   "name": "cypress-jest",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Jest runner for Cypress",
   "main": "index.js",
   "scripts": {
