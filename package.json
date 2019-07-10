@@ -36,7 +36,7 @@
     "@commitlint/config-conventional": "8.0.0",
     "cypress": "3.4.0",
     "find-up": "4.1.0",
-    "husky": "2.4.1",
+    "husky": "2.7.0",
     "jest": "24.8.0",
     "path": "0.12.7",
     "standard-version": "6.0.1",
