@@ -40,7 +40,7 @@
     "jest": "24.9.0",
     "path": "0.12.7",
     "standard-version": "7.0.1",
-    "testdouble": "3.12.4",
+    "testdouble": "3.12.5",
     "testdouble-jest": "2.0.0"
   },
   "husky": {
