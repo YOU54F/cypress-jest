@@ -34,7 +34,7 @@
   "devDependencies": {
     "@commitlint/cli": "8.3.4",
     "@commitlint/config-conventional": "8.3.4",
-    "cypress": "3.8.1",
+    "cypress": "3.8.2",
     "find-up": "4.0.0",
     "husky": "3.1.0",
     "jest": "24.9.0",
