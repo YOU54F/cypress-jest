@@ -32,7 +32,7 @@
     "jest": ">=21.0.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "8.3.4",
+    "@commitlint/cli": "8.3.5",
     "@commitlint/config-conventional": "8.3.4",
     "cypress": "3.8.2",
     "find-up": "4.0.0",
