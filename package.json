@@ -37,7 +37,7 @@
     "cypress": "4.4.1",
     "find-up": "4.0.0",
     "husky": "4.2.5",
-    "jest": "25.5.0",
+    "jest": "25.5.1",
     "path": "0.12.7",
     "standard-version": "7.1.0",
     "testdouble": "3.13.1",
